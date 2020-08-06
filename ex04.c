@@ -3,6 +3,12 @@ int main(void){
     // Your code here!
     int i,num,heads=0,tails=0;
     
+
+    char name[8];
+    printf("Who are you?\n");
+    scanf("%s",&name);
+    printf("Hello %s!\n",name);
+  
      int choice;
     printf("Which is win do you think heads or tails?\n");
     printf("Take 0 if you think heads will win, take 1 if you think tails will win.\n");
