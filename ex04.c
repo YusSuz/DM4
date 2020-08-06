@@ -10,14 +10,14 @@ int main(void){
     printf("Hello %s!\n",name);
   
      int choice;
-    printf("Which is win do you think heads or tails?\n");
-    printf("Take 0 if you think heads will win, take 1 if you think tails will win.\n");
+    printf("Which is win do %s think heads or tails?\n",name);
+    printf("Take 0 if %s think heads will win, take 1 if you think tails will win.\n",name);
     scanf("%d",&choice);
     
     if(choice == 0){
-        printf("You think heads will win.\n");
+        printf("%s think heads will win.\n",name);
     }else if(choice == 1){
-        printf("You think tails will win.\n");
+        printf("%s think tails will win.\n",name);
     }
     
     for(i=0;i<3;i++){
@@ -34,16 +34,16 @@ int main(void){
     
     if(heads>tails){
         if(choice == 0){
-            printf("You won!");
+            printf("%s won!",name);
         }else if(choice == 1){
-            printf("You lost...");
+            printf("%s lost...",name);
             }
     }
     if(heads<tails){
         if(choice == 1){
-            printf("You won!");
+            printf("%s won!",name);
         }else if(choice == 0){
-            printf("You lost...");
+            printf("%s lost...",name);
         }
     }
     return 0;
