@@ -3,6 +3,12 @@ int main(void){
     // Your code here!
     int i,num,heads=0,tails=0;
     
+    //名前を聞くパート
+    char name[8];
+    printf("Who are you?\n");
+    scanf("%s",&name);
+    printf("Hello %s!\n",name);
+    
     for(i=0;i<3;i++){
         num=rand();
         if(num%2==0){
